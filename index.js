@@ -11,7 +11,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 const MongoStore = require('connect-mongo');
-const PORT = process.env.PORT || 4212;
+const PORT = process.env.PORT || 4000;
 const DB_URL = process.env.DB_URL || 'mongodb://127.0.0.1:27017/ECommerce';
 
 mongoose.connect(DB_URL)
