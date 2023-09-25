@@ -33,7 +33,7 @@ const secret = process.env.SECRET;
 
 app.use(session({
     store: MongoStore.create({mongoUrl: DB_URL}),
-    secret,
+    secret:secret,
     resave: false,
     saveUninitialized: true,
     cookie: {
